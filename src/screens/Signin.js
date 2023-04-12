@@ -1,4 +1,4 @@
-import {View, Text, Pressable, TextInput, Keyboard} from 'react-native';
+import {View, Text, Pressable, TextInput, Keyboard, Image} from 'react-native';
 import React, {useState} from 'react';
 import {StatusBar} from 'expo-status-bar';
 import global from '../styles/global.styles';
@@ -26,8 +26,16 @@ const Signin = () => {
     <HideKeyboard>
       <View className="flex-1">
         <StatusBar barStyle={'dark-content'} />
-        <View className="flex-1 justify-center items-center">
-          <View className="flex-col w-10/12 mx-auto">
+
+        <View className="flex-1 items-center">
+          <View className="flex-col w-10/12 mx-auto landscape:w-1/2">
+            <View className="w-full h-[200] mb-20">
+              <Image
+                source={require('../assets/images/logo.png')}
+                style={{transform: [{scale: 0.5}]}}
+                className="h-[300px] mx-auto w-1/2 relative"
+              />
+            </View>
             <Text
               className="text-4xl font-lexend text-slate-500 font-bold mb-10"
               style={global.titleOpacity}>
