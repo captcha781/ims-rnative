@@ -1,9 +1,9 @@
 // import {View, Text} from 'react-native';
 import React from 'react';
-import Signin from './src/screens/Signin';
+import IndexRoutes from './src/routes/Index.routes';
 
 const App = () => {
-  return <Signin />;
+  return <IndexRoutes />;
 };
 
 export default App;

@@ -6,7 +6,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Feather from 'react-native-vector-icons/Feather';
 import HideKeyboard from '../components/HideKeyBoard';
 
-const Signin = () => {
+const Signin = ({navigation}) => {
   const [active, setActive] = useState({
     email: false,
     password: false,
@@ -16,6 +16,7 @@ const Signin = () => {
 
   const LoginHandler = () => {
     Keyboard.dismiss();
+    navigation.navigate('Lander');
   };
 
   const ActiveHandler = (id, state) => {
