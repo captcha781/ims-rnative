@@ -51,6 +51,7 @@ const TabNavigator = createMaterialBottomTabNavigator(
   {
     renderTouchable: props => <TouchableOpacity {...props} activeOpacity={1} />,
     backBehavior: 'none',
+    barStyle: {height: '8.5%'},
   },
 );
 

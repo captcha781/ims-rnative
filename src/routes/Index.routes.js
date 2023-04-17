@@ -3,6 +3,7 @@ import {createStackNavigator} from 'react-navigation-stack';
 import Splash from '../screens/Splash';
 import Signin from '../screens/Signin';
 import BottomNavigator from './bottom.navigator';
+import Settings from '../screens/Settings';
 
 const screens = {
   Splash: {
@@ -13,6 +14,9 @@ const screens = {
   },
   Lander: {
     screen: BottomNavigator,
+  },
+  Settings: {
+    screen: Settings,
   },
 };
 
