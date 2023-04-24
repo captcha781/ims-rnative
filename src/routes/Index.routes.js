@@ -4,6 +4,7 @@ import Splash from '../screens/Splash';
 import Signin from '../screens/Signin';
 import BottomNavigator from './bottom.navigator';
 import Settings from '../screens/Settings';
+import Classroom from '../screens/Classroom';
 
 const screens = {
   Splash: {
@@ -17,6 +18,9 @@ const screens = {
   },
   Settings: {
     screen: Settings,
+  },
+  Classroom: {
+    screen: Classroom,
   },
 };
 
